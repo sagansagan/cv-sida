@@ -1,36 +1,134 @@
-body{
-    background-color: #2F4F4F;
-    margin: 0;
-}
-
-:root{
-    --primary-color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;*/
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    
 }
 
-header{
-    background-color: beige;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
+body {
+    background-color: #e3f6f5;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
+}
+
+h1,
+h2,
+h3,
+p{
+    margin-bottom: 1em;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+
+}
+
+header {
+    background-color: #272343;
+    padding: 4em;
     width: 100vw;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    color:#e3f6f5
 }
 
-header>h1{
-    color: #2F4F4F;
-    margin: 0 auto;
+.main-nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    color: beige;
+     
 }
 
-.container{
+.main-nav a {
+    text-transform: uppercase;
+    padding: 2em 2em;
+    text-decoration: none;
+    color: #e3f6f5;
+    font-weight: 600;
+}
+
+.main-nav a:hover, a.active{
+    text-decoration: overline;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.home .box-2 {
+    padding-top: 4rem;
+}
+
+.box-2>img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.box-1 {
+    text-align: center;
+}
+
+.box-1 h2 {
+    font-weight: lighter;
+}
+
+/*<---------cv----------->*/
+
+.cv{
+    display: flex;
+    gap: 5em;
+    padding: 8em;
+}
+
+.education{
+    line-height: 3em;
+}
+ /*<------portfolio------->*/
+
+.portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 2em;
 }
 
-p{
-    font-size:2em;
+.portfolio img{
+    width: 50%;
+    height: 40%;
+}
+
+/*<-----contact------>*/
+.contact{
+    text-align: center;
+    padding: 7em;
+}
+
+
+
+@media screen and (max-width: 912px) {
+
+    .cv, .home, header{
+        flex-direction: column;
+        padding: 2em;
+    }
 }
