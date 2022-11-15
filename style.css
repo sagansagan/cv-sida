@@ -131,4 +131,8 @@ header {
         flex-direction: column;
         padding: 2em;
     }
+
+    .main-nav li{
+        padding: 1em;
+    }
 }
